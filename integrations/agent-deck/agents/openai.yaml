@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Deck"
+  short_description: "Find and adapt offline agent architecture blueprints"
+  default_prompt: "Use $agent-deck to choose an architecture for this task and adapt its contracts to my project."

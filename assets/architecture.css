@@ -1,0 +1,107 @@
+
+/* Agent identity and readable architecture diagrams. */
+@layer hardware{
+.brand-mark{filter:none;width:34px;height:34px}
+.mascot{width:86px;flex-shrink:0}
+.brand-note{display:none}
+.agent-glyph{width:30px;height:30px;flex-shrink:0}
+.cart-graph{min-height:66px;margin:8px 0 7px}
+.cart-graph svg{max-height:108px;opacity:1;overflow:visible}
+.mini-diagram .diagram-edge{fill:none;stroke:#718267;stroke-width:1.3}
+.mini-diagram .edge-data{stroke-dasharray:3 3;opacity:.65}
+.mini-diagram .edge-feedback{stroke:#9d6c45}
+.mini-diagram .edge-choice{stroke-dasharray:2 2}
+.mini-node{color:#59664e}
+.wiring-summary{max-width:70ch;font-size:15px!important;line-height:1.75!important}
+.wiring-facts{display:flex;gap:8px 20px;flex-wrap:wrap;margin:18px 0 20px;padding-block:12px;border-block:1px solid #ccd0ba;color:#4b5741;font:11px/1.5 var(--mono)}
+.actor-legend{display:flex;flex-wrap:wrap;gap:10px 22px;margin:16px 0}
+.actor-legend>span{display:flex;align-items:center;gap:8px;font:12px var(--sans);color:#394831}
+.actor-legend svg{width:27px;height:27px;flex-shrink:0}
+.connection-legend{display:flex;gap:10px 22px;flex-wrap:wrap;font:11px/1.6 var(--sans);color:#58634c;margin-bottom:20px}
+.connection-legend>span{display:flex;align-items:center;gap:8px}
+.connection-legend i{width:26px;border-top:1.5px solid #78866a}
+.connection-legend .dashed-line{border-top-style:dashed}
+.detail-body .diagram-help{font:12px/1.6 var(--sans);color:#59664b;margin:16px 0 10px;max-width:70ch}
+.architecture-diagram{padding:18px 8px 7px;background:#f3f1e2;margin-bottom:12px;overflow:visible}
+.runtime-diagram{overflow:visible}
+.runtime-diagram .diagram-edge{fill:none;stroke:#89937b;stroke-width:1.4}
+.runtime-diagram .edge-data{stroke-dasharray:5 5;stroke:#8d967e;opacity:.8}
+.runtime-diagram .edge-feedback{stroke:#98613c;stroke-width:1.8}
+.runtime-diagram .edge-choice{stroke-dasharray:4 3;stroke:#786387}
+.diagram-node{cursor:pointer;color:#4c5c45;outline:none}
+.node-surface{fill:#fff9ec;stroke:#89937c;stroke-width:1.2;transition:stroke .16s,fill .16s}
+.kind-llm .node-surface{stroke:var(--actor-color);fill:#faf6e9}
+.kind-gate .node-surface{fill:#e4e8d2}
+.kind-human .node-surface{fill:#e9ded0;stroke:#956747}
+.kind-merge .node-surface{fill:#e7e7d9}
+.kind-store .node-surface,.kind-memory .node-surface{fill:#e2e8d8;stroke:#78866a}
+.kind-environment .node-surface{fill:#e5e7df}
+.kind-candidate .node-surface{fill:#eee9d7;stroke-dasharray:3 2}
+.kind-input .node-surface,.kind-output .node-surface{fill:#f6f0dd}
+.store-rim{fill:none;stroke:#9ca48a;stroke-width:1}
+.node-title{font:14px var(--sans);fill:#2d3d2b;text-anchor:middle;pointer-events:none}
+.kind-gate .node-title{font-size:13px}
+.node-caption{font:12px var(--sans);fill:#566149;text-anchor:middle;pointer-events:none}
+.system-glyph{pointer-events:none}
+.diagram-node:hover .node-surface{stroke:#af532e;stroke-width:2;fill:#fffdf2}
+.diagram-node.is-active .node-surface,.diagram-node:focus-visible .node-surface{stroke:#ab4427;stroke-width:2.7;fill:#fff9e3}
+.diagram-node:focus-visible .node-surface{stroke-dasharray:4 2}
+.edge-label{font:11px var(--mono);fill:#5a604b;stroke:#f3f1e2;stroke-width:5px;paint-order:stroke;text-anchor:middle;stroke-linejoin:round}
+.route-legend{display:flex;flex-wrap:wrap;gap:8px 20px;font:11px/1.65 var(--sans);margin:12px 0 20px;color:#56634b}
+.route-legend span{display:flex;gap:7px}
+.route-legend strong{font:11px var(--mono);color:#8d5734;white-space:nowrap}
+.flow-steps{display:flex;gap:7px;flex-wrap:wrap;margin:23px 0 20px}
+.flow-steps button{display:flex;align-items:center;gap:7px;min-height:44px;padding:9px 11px;background:#e7e8d7;border:1px solid #b7bda3;border-radius:5px;font:11px var(--sans)}
+.flow-steps button>span{font:11px var(--mono);color:#6b7657}
+.flow-steps button[aria-pressed=true]{background:#3f5840;border-color:#3f5840;color:#f6f3db;box-shadow:inset 0 1px 3px #26382080}
+.flow-steps button[aria-pressed=true]>span{color:#e0e9c2}
+.node-inspector{border-top:1px solid #bbc2a7;border-bottom:1px solid #bbc2a7;padding:23px 0 20px;margin-top:8px}
+.inspector-title{display:flex;align-items:center;gap:14px;margin-bottom:20px}
+.inspector-title>svg{width:40px;height:40px;color:#576849}
+.inspector-title h3{font-size:25px;margin-bottom:5px}
+.inspector-title p{font:12px/1.5 var(--sans)!important;color:#59684c}
+.inspector-contracts{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.node-inspector h4{margin:18px 0 7px;font:600 12px var(--sans);letter-spacing:0}
+.node-inspector p{font-size:14px;line-height:1.7}
+.node-inspector .artifact-note{font:11px/1.7 var(--mono);margin-top:18px}
+.representation-note{padding:18px 0;margin-top:9px;border-bottom:1px solid #c7ccb7}
+.representation-note summary{cursor:pointer;min-height:30px;font:600 12px var(--sans);color:#4e6144}
+.representation-note p{font-size:13px;margin:12px 0 0}
+@media(max-width:1100px){.cartridge{aspect-ratio:auto;min-height:272px}.cart-label{flex:1 0 auto;min-height:206px}.cart-graph{min-height:65px}.mascot{width:80px}}
+@media(max-width:850px){.mascot{width:65px}}
+@media(max-width:650px){
+.mascot{width:76px}
+.cartridge{min-height:262px}.cart-label{min-height:204px}
+.cart-graph{min-height:62px;margin-block:5px}
+.cart-graph svg{max-height:93px}
+.wiring-facts{font-size:11px;gap:9px 15px}
+.actor-legend{gap:10px 14px}
+.actor-legend>span{font-size:12px}
+.actor-legend svg{width:25px;height:25px}
+.architecture-diagram{padding:10px 0 0}
+.runtime-diagram[data-orientation=vertical] .node-title{font-size:15px}
+.runtime-diagram[data-orientation=vertical] .node-caption{font-size:14px}
+.runtime-diagram[data-orientation=vertical] .edge-label{font-size:14px}
+.flow-steps{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:20px}
+.flow-steps button{font-size:12px;line-height:1.4;text-align:left;min-height:48px}
+.inspector-contracts{display:block}
+.inspector-title h3{font-size:24px}
+.route-legend{display:grid;gap:8px}
+}
+@media(max-width:370px){.mascot{width:65px}.cartridge{aspect-ratio:1.025;min-height:255px}.cart-label{min-height:204px}.cart-graph svg{max-height:125px}}
+@media(prefers-reduced-motion:reduce){.node-surface{transition:none}}
+}
+
+/* Cassette logo preview and a small connected team on the library reader. */
+@layer hardware{
+.screen-main{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px}
+.screen-main>.mascot-team{width:124px;max-width:100%;height:auto;justify-self:center;filter:none;image-rendering:auto}
+.screen-main>div{min-width:0}
+.hero-object.hello .mascot-team{animation:team-hello .65s var(--ease)}
+@keyframes team-hello{0%,100%{transform:translateY(0)}35%{transform:translateY(-3px)}70%{transform:translateY(-1px)}}
+@media(max-width:1100px){.screen-main{gap:14px}.screen-main>.mascot-team{width:108px}}
+@media(max-width:850px){.screen-main{gap:12px}.screen-main>.mascot-team{width:94px}}
+@media(max-width:650px){.screen-main{gap:14px}.screen-main>.mascot-team{width:104px}}
+@media(max-width:370px){.screen-main{gap:12px}.screen-main>.mascot-team{width:90px}}
+@media(prefers-reduced-motion:reduce){.hero-object.hello .mascot-team{animation:none;transform:none}}
+}

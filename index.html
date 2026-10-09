@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#eae6dc">
+<meta name="description" content="An open library of agent architecture blueprints. Explore 64 patterns and 384 application presets, from prompt chains to multi-agent search.">
+<title>Agent Deck — architecture cartridges</title>
+<link rel="icon" type="image/svg+xml" href="./assets/mark.svg">
+<link rel="preload" href="./assets/fonts/SpaceGrotesk-Variable.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="./assets/hardware.css">
+<link rel="stylesheet" href="./assets/architecture.css">
+</head>
+<body>
+<a class="skip-link" href="#catalogue">Skip to the library</a>
+<header class="header shell">
+<a class="brand" href="./" aria-label="Agent Deck home"><img class="brand-mark" src="./assets/mark.svg" alt="" width="36" height="36"><span>AGENT<br>DECK</span></a>
+<nav aria-label="Main navigation"><a href="#catalogue">The collection <span class="nav-count" id="nav-count">384</span></a><a href="#ide">IDE skill</a><button id="reading-open">Reading room</button><button id="about-open">About</button></nav>
+<button class="saved-button" id="saved-toggle" aria-pressed="false"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9Z"/></svg> Saved <span id="saved-count">0</span></button>
+</header>
+<main>
+<section class="hero shell" aria-labelledby="hero-title">
+<div class="hero-copy">
+<h1 id="hero-title">Good agents.<br>Great <span>blueprints.</span></h1>
+<p class="hero-description">Explore agent architectures. Build your own.</p>
+<div class="hero-actions"><a class="button primary" href="#catalogue">Browse the collection <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M6 5h13v13"/></svg></a><button class="text-button" id="how-open">How it works <span aria-hidden="true">→</span></button></div>
+<p class="hero-footnote"><span>64 architecture families</span><span>384 application presets</span><span>Free to explore</span></p>
+</div>
+<div class="hero-object" aria-label="An upright cream library console with three small connected AI agents">
+
+<div class="console">
+<span class="case-screw screw-tl" aria-hidden="true"></span><span class="case-screw screw-tr" aria-hidden="true"></span><span class="case-screw screw-bl" aria-hidden="true"></span><span class="case-screw screw-br" aria-hidden="true"></span>
+<div class="console-top"><span class="console-maker" aria-hidden="true">ARCHITECTURE<br><strong>READER</strong></span><span class="console-model" aria-hidden="true"><i aria-hidden="true"></i>AL—01</span></div>
+<div class="screen-frame"><div class="console-screen">
+<div class="screen-meta"><span>DECK ONLINE</span><span class="screen-ready">READY</span></div>
+<div class="screen-main"><img class="mascot mascot-team" src="./assets/agent-team.svg" width="132" height="102" alt="Three small AI agents connected as a team: yellow coordinator, brick-red researcher and leaf-green builder"><div><span class="screen-kicker">DECK INDEX</span><strong class="screen-number">384</strong><span class="screen-caption">possibilities on the shelf</span></div></div>
+<div class="screen-bottom"><span>EXPLORE → BUILD → EVALUATE</span><span class="cursor">_</span></div>
+</div></div>
+<div class="console-controls"><div class="speaker" aria-hidden="true"></div><div class="tuning-dial" aria-hidden="true"><i></i></div><div class="controls-label" aria-hidden="true">LESS GUESSWORK.<br>MORE GOOD STRUCTURE.</div><button class="power-button" id="mascot-button" aria-label="Say hello to the agent team"><span></span></button></div>
+<div class="console-slot" aria-hidden="true"><span></span><i></i></div>
+<div class="console-base" aria-hidden="true"><span>MODEL-AGNOSTIC / SOURCE-INFORMED PATTERNS</span><span>OPEN INDEX</span></div>
+</div>
+<p class="object-caption"><span class="status-light"></span>Little agents. Shared ideas.</p>
+</div>
+</section>
+<section id="catalogue" class="catalogue shell" aria-labelledby="library-title">
+<div class="section-head"><div><h2 id="library-title">The cartridge collection<span class="tiny-period">.</span></h2></div><button class="text-button" id="download-all">Download collection <span aria-hidden="true">↓</span></button></div>
+<div class="search-console">
+<label class="search-label" for="search">Search the collection</label>
+<div class="search-field"><span class="search-icon" aria-hidden="true"></span><input id="search" type="search" placeholder="Try “GraphRAG”, “memory”, or “coding”…" autocomplete="off"><kbd>/</kbd></div>
+<button class="filter-toggle" id="filter-toggle" aria-expanded="false" aria-controls="filters">Filters <span id="filter-total">0</span></button>
+</div>
+<div class="catalogue-body">
+<aside class="filters" id="filters" aria-label="Collection filters">
+<div class="filter-heading"><span>FINE-TUNE THE SHELF</span><button id="reset" class="text-button">Reset</button></div>
+<div id="category-filters"></div><div id="level-filters"></div><div id="scenario-filters"></div><div id="topology-filters"></div>
+<div class="filter-note"><span class="mini-square" aria-hidden="true"></span><p>Start simple.<br>Add complexity when<br>the task calls for it.</p><button id="method-open">Our approach <span aria-hidden="true">↗</span></button></div>
+</aside>
+<div class="results-area">
+<div class="results-toolbar"><p id="result-count" role="status" aria-live="polite" aria-atomic="true">384 cartridges on the shelf</p><div class="sort-control"><label for="sort">Sort</label><select id="sort"><option value="featured">Editor's shelf</option><option value="level">Basic → Expert</option><option value="name">A → Z</option></select></div></div>
+<div class="active-filters" id="active-filters" aria-label="Selected filters"></div>
+<div class="cards" id="cards"></div>
+<div id="empty" class="empty-state" hidden><img src="./assets/mascot.svg" alt=""><h3>This shelf is a little too specific.</h3><p>Try another search or remove a filter.</p><button class="button secondary" id="empty-reset">Reset collection</button></div>
+<div class="load-area"><p id="page-status"></p><button class="button secondary" id="load-more">Load more cartridges <span aria-hidden="true">↓</span></button></div>
+</div></div>
+</section>
+<section class="ide-kit shell" id="ide" aria-labelledby="ide-title">
+<div class="ide-kit-copy"><h2 id="ide-title">Take the deck<br>into your IDE.</h2><p>One free, offline skill. Search every architecture, then load only the blueprint you need.</p><div class="ide-tools" aria-label="Supported coding tools"><span>Codex</span><span>Cursor</span><span>Claude Code</span><span>Copilot</span></div></div>
+<div class="ide-kit-controls"><a class="button primary" id="download-skill" href="./agent-deck-skill.zip" download="agent-deck-skill.zip">Download IDE skill <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/></svg></a><p class="ide-kit-meta">Free · MIT · Offline catalog<br>Helper requires Node.js 20+</p><a class="text-button" href="./ide-guide.md" download="agent-deck-install.md">Full installation guide <span aria-hidden="true">↓</span></a></div>
+<details class="ide-install"><summary>Install in your project</summary><div class="ide-install-body"><p>Extract the ZIP and copy the entire <code>agent-deck</code> folder to the location for your tool. Keep scripts and references together.</p><table><caption class="sr-only">Project skill locations</caption><thead><tr><th scope="col">Tool</th><th scope="col">Folder in your project</th></tr></thead><tbody><tr><th scope="row">Codex, Cursor, Copilot</th><td><code>.agents/skills/agent-deck/</code></td></tr><tr><th scope="row">Claude Code</th><td><code>.claude/skills/agent-deck/</code></td></tr></tbody></table><p>Reload skills or open a fresh session. Use <code>$agent-deck</code> in Codex, or <code>/agent-deck</code> in Cursor, Claude Code and Copilot.</p><blockquote>Use Agent Deck to choose an architecture for my document assistant. Compare a simple baseline with an advanced alternative, then adapt it to my stack.</blockquote><p>The package needs no account or API key. Your assistant supplies the AI; blueprints still need implementation and evaluation.</p></div></details>
+</section>
+<section class="library-note shell"><h2>Patterns with provenance.<br>Room for your own experiments.</h2><p>These are original, framework-neutral design presets informed by papers and engineering guides. They include implementation contracts and evaluation plans. Their performance has not been benchmarked.</p><button class="text-button" id="note-reading">Meet the sources <span aria-hidden="true">↗</span></button></section>
+</main>
+<footer class="footer shell"><div><strong>AGENT DECK</strong><span>Built for curious people who build things.</span></div><p>Original blueprints · <a href="./LICENSE">MIT license</a><br>Source works retain their own licenses.<br><a href="./THIRD_PARTY_NOTICES.md">Font credits &amp; licenses</a></p><a href="#hero-title">Back to top ↑</a></footer>
+<div class="compare-bar" id="compare-bar" hidden><span id="compare-count">0 selected</span><div id="compare-names"></div><button id="compare-clear">Clear</button><button class="button primary" id="compare-open">Compare</button></div>
+<dialog id="detail" class="detail-dialog" aria-labelledby="detail-title"><div class="dialog-header"><span id="detail-eyebrow"></span><button class="close-button" data-close aria-label="Close details"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><div id="detail-content"></div></dialog>
+<dialog id="reading" class="reading-dialog" aria-labelledby="reading-title"><div class="dialog-header"><span>FIELD NOTES & ORIGINAL SOURCES</span><button class="close-button" data-close aria-label="Close reading room"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><div class="reading-inner"><h2 id="reading-title">The reading room.</h2><p class="reading-intro">Start with a practical guide. Follow a mechanism to its paper. Keep the original authors in view.</p><div class="reading-tabs" id="reading-tabs" aria-label="Source type"></div><div id="source-list"></div></div></dialog>
+<dialog id="info" class="info-dialog" aria-labelledby="info-title"><div class="dialog-header"><span>INSIDE AGENT DECK</span><button class="close-button" data-close aria-label="Close information"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><div class="info-inner"><img src="./assets/mascot.svg" alt=""><h2 id="info-title">Small cartridges.<br>Clear contracts.</h2><p>Explore 64 architecture families and 384 application presets, spanning basic workflows through expert systems.</p><ol><li><strong>Find a fit.</strong> Search by mechanism, application or complexity. The same family has six task-specific adaptations.</li><li><strong>Inspect the wiring.</strong> Follow colored agent roles, tools, memory and conditional transitions. Select a node to inspect its contract, then check budgets and failure modes.</li><li><strong>Make it yours.</strong> Download a JSON blueprint or Markdown guide. Implement the model and tool adapters in your preferred runtime.</li><li><strong>Measure it.</strong> Use the fixture and acceptance criteria. Compare against a direct-call baseline before adding complexity.</li></ol><p class="info-note">Blueprints are design specifications, not executable agents or drop-in framework configurations. No account, API key or telemetry is required to browse.</p><button class="button primary" data-close>Back to the shelf →</button></div></dialog>
+<dialog id="comparison" class="comparison-dialog" aria-labelledby="comparison-title"><div class="dialog-header"><span>PUT THEM SIDE BY SIDE</span><button class="close-button" data-close aria-label="Close comparison"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><div class="comparison-inner"><h2 id="comparison-title">Find the right tradeoff.</h2><div id="comparison-content"></div></div></dialog>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+<noscript><p class="shell">Enable JavaScript to search the collection. The full collection is also available as <a href="./catalog.json">JSON</a>.</p></noscript>
+<script type="module" src="./app.mjs"></script>
+</body></html>

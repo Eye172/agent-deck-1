@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-09",
+  "verdict": "Ready as a static catalog of design specifications; no deployment or empirical model validation",
+  "catalog": {
+    "families": 64,
+    "wiring_labels": 46,
+    "presets": 384,
+    "references": 53
+  },
+  "verification": {
+    "unit_tests_passed": 30,
+    "browser_scenarios_passed": 11,
+    "diagram_renderings_passed": 128,
+    "diagram_layouts": 11,
+    "cartridge_labels": 384,
+    "cartridge_widths": [
+      320,
+      375,
+      390,
+      768,
+      1024,
+      1440
+    ],
+    "preset_exports": 768,
+    "production_checks": [
+      "clean reproducible production build",
+      "all 768 preset exports match canonical source and collection JSON",
+      "case-sensitive asset paths and browser module imports resolve within public output",
+      "local HTTP export sweep, MIME types, security headers and path confinement",
+      "root UI, hostile query escaping and invalid deep links",
+      "GitHub Pages style subpath loads deep links, fonts, filters, sources and exports",
+      "blocked browser storage and clipboard fallback keep the site usable",
+      "browse requests stay local and CSP produces no violations"
+    ],
+    "skill_browser_groups_passed": 3,
+    "independent_skill_package_checks": [
+      "facets",
+      "filtered search",
+      "canonical full preset",
+      "no files changed"
+    ]
+  },
+  "artifact": {
+    "total_files": 804,
+    "total_bytes": 20218627,
+    "largest_file": {
+      "path": "catalog.json",
+      "bytes": 7010311,
+      "sha256": "a644e9e156dfb412fe7c57936ced6a9a38207f514cfdb9e12697efe0ed74b2b7"
+    },
+    "manifest_sha256": "0b5be08e5b3efe4ff25b8a65866346c9ff8c0a911219acb2c8c184f80336650a"
+  },
+  "limits": [
+    "No model or agent execution benchmarks",
+    "Source metadata/core-concept review, not full-text review or live link-status certification",
+    "No physical-device, Firefox/Safari or actual hosted HTTPS checks",
+    "Current relationship of supplied Arka04bro ReasonMaxxer fork not reverified",
+    "Skill discovery and model use not exercised inside all four IDE products"
+  ],
+  "skill": {
+    "status": "portable-offline-package",
+    "version": "1.0.0",
+    "zip_bytes": 1886828,
+    "zip_entries": 392,
+    "presets": 384,
+    "zip_sha256": "8939a32124fe68fc507641b701eb8f849aabc5acd2396520bef81bb27bdf93d7",
+    "independent_zip_crc_check": "Python zipfile.testzip",
+    "live_ide_discovery": "not exercised"
+  }
+}
