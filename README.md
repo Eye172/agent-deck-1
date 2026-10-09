@@ -8,7 +8,7 @@ A free, source-attributed catalog of agent architecture blueprints, with an offl
 
 Explore agent architectures, inspect their contracts and adapt them to your own stack. The six application domains are research, coding, private knowledge, data analysis, writing and support.
 
-The website and IDE package are designed for static publication at **https://Eye172.github.io/agent-deck-1/**. Deployment status is available in the repository's Actions tab.
+**[Explore the website](https://eye172.github.io/agent-deck-1/)** · [Download the IDE skill](https://eye172.github.io/agent-deck-1/agent-deck-skill.zip) · [Deployment status](https://github.com/Eye172/agent-deck-1/actions/workflows/pages.yml)
 
 ## Explore and export
 
@@ -76,6 +76,7 @@ Source authors remain credited in each preset. No ReasonMaxxer implementation, t
 - [IDE integration](docs/IDE_INTEGRATION.md)
 - [Verification and limitations](docs/VERIFICATION.md)
 - [Pre-deployment audit](docs/PREDEPLOY_AUDIT.md)
+- [Publication and live verification](docs/PUBLICATION.md)
 - [Hosting and GitHub Pages](docs/DEPLOYMENT.md)
 - [Contributing](CONTRIBUTING.md)
 

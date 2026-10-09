@@ -23,4 +23,4 @@ Local evidence is in output/browser-qa.json, output/architecture-qa.json, output
 
 ## Limits
 
-No physical-device/cross-browser test, hosted HTTPS deployment, live discovery in each IDE, model API integration, agent execution or model quality/cost/latency benchmark was performed. Source verification covers metadata, authors and described core concepts; it is not a full-text review or live status check of every source URL. Diagrams remain explanatory templates, not execution traces.
+Hosted HTTPS publication and subsequent checks are recorded in [PUBLICATION.md](PUBLICATION.md). No physical-device/cross-browser test, live discovery in each IDE, model API integration, agent execution or model quality/cost/latency benchmark was performed. Source verification covers metadata, authors and described core concepts; it is not a full-text review or live status check of every source URL. Diagrams remain explanatory templates, not execution traces.

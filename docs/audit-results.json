@@ -1,6 +1,6 @@
 {
   "date": "2026-10-09",
-  "verdict": "Ready as a static catalog of design specifications; no deployment or empirical model validation",
+  "verdict": "Published static catalog of design specifications with verified hosted UI and downloads; no empirical model validation",
   "catalog": {
     "families": 64,
     "wiring_labels": 46,
@@ -53,7 +53,7 @@
   "limits": [
     "No model or agent execution benchmarks",
     "Source metadata/core-concept review, not full-text review or live link-status certification",
-    "No physical-device, Firefox/Safari or actual hosted HTTPS checks",
+    "No physical-device or Firefox/Safari checks",
     "Current relationship of supplied Arka04bro ReasonMaxxer fork not reverified",
     "Skill discovery and model use not exercised inside all four IDE products"
   ],
@@ -66,5 +66,29 @@
     "zip_sha256": "8939a32124fe68fc507641b701eb8f849aabc5acd2396520bef81bb27bdf93d7",
     "independent_zip_crc_check": "Python zipfile.testzip",
     "live_ide_discovery": "not exercised"
+  },
+  "publication": {
+    "date": "2026-10-09",
+    "provider": "GitHub Pages",
+    "repository": "https://github.com/Eye172/agent-deck-1",
+    "url": "https://eye172.github.io/agent-deck-1/",
+    "tested_commit": "d70680fc40bc8d9d0106ed48641ebe0d89234588",
+    "workflow": "https://github.com/Eye172/agent-deck-1/actions/runs/37936842488",
+    "workflow_conclusion": "success",
+    "browser_scenarios_passed": 11,
+    "skill_browser_groups_passed": 3,
+    "http_groups_passed": 4,
+    "checked_at": "2026-10-09T13:30:10.071Z",
+    "observed_response_headers": {
+      "content-type": "text/html; charset=utf-8",
+      "server": "GitHub.com",
+      "strict-transport-security": "max-age=31556952",
+      "x-content-type-options": null,
+      "content-security-policy": null,
+      "x-frame-options": null,
+      "permissions-policy": null
+    },
+    "zip_sha256": "8939a32124fe68fc507641b701eb8f849aabc5acd2396520bef81bb27bdf93d7",
+    "scope": "Live Chromium interface, selected canonical export/font bytes, downloads, deep links, MIME, CSP meta and private-path 404s. No live IDE invocation or model execution."
   }
 }

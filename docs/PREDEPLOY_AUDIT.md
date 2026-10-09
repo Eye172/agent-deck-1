@@ -1,6 +1,6 @@
 # Pre-deployment audit — 9 October 2026
 
-**Verdict: ready to publish as a static catalog of design specifications.** No unresolved defect was found in the checks below. This does not certify operational agent performance or a hosting provider's deployed configuration. Publication has not been performed.
+**Verdict: ready to publish as a static catalog of design specifications.** No unresolved defect was found in the checks below. This does not certify operational agent performance or a hosting provider's deployed configuration. This section records the pre-publication audit. The subsequent successful deployment and live checks are recorded in [PUBLICATION.md](PUBLICATION.md).
 
 ## Content and attribution
 
@@ -50,7 +50,7 @@ Presets require actual provider/tool/storage adapters, predicates, task validato
 
 Viewport checks are not physical-device or Safari/Firefox tests. Local and simulated-subpath checks are not live HTTPS hosting checks. There is no backend, API credential, analytics service or model integration in this build. Local browsing generated no external network requests, script errors or CSP violations in the tested flows; this is not a general security certification.
 
-After publication, verify the live HTTPS URL, deep links, .mjs MIME types, downloads, fonts, 404 and response headers using the checklist in [DEPLOYMENT.md](DEPLOYMENT.md). A hostname/account/repository and hosted URL remain to be selected.
+After publication, verify the live HTTPS URL, deep links, .mjs MIME types, downloads, fonts, 404 and response headers using the checklist in [DEPLOYMENT.md](DEPLOYMENT.md). The selected repository and hosted URL are recorded in [PUBLICATION.md](PUBLICATION.md).
 
 ## IDE skill follow-up
 

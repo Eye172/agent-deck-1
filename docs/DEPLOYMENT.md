@@ -10,7 +10,7 @@ Build with Node 24 in a Pages Actions workflow and publish **dist as the Pages a
 
 GitHub Pages does not apply Cloudflare/Netlify _headers rules. The generated HTML includes a CSP fallback, but frame-ancestors, X-Frame-Options and Permissions-Policy require host response-header support and do not come from that fallback.
 
-The repository includes [.github/workflows/pages.yml](../.github/workflows/pages.yml). It runs the Node tests, builds the website and portable skill, uploads only dist, and publishes successful main-branch builds. Pull requests run verification without deployment. Enable Settings → Pages → Source → GitHub Actions before the first deployment. The intended repository is Eye172/agent-deck-1; the intended URL is https://Eye172.github.io/agent-deck-1/.
+The repository includes [.github/workflows/pages.yml](../.github/workflows/pages.yml). It runs the Node tests, builds the website and portable skill, uploads only dist, and publishes successful main-branch builds. Pull requests run verification without deployment. Enable Settings → Pages → Source → GitHub Actions before the first deployment. The repository is [Eye172/agent-deck-1](https://github.com/Eye172/agent-deck-1); the live URL is [eye172.github.io/agent-deck-1](https://eye172.github.io/agent-deck-1/).
 
 ## Alternative: Cloudflare Pages
 
@@ -60,4 +60,4 @@ The app uses query-based deep links on the index page. It does not require an SP
 - Inspect response headers where supported: CSP, nosniff, no-referrer, framing restrictions and Permissions-Policy. Check the console for CSP violations.
 - Confirm no secret/local files are served and that browsing does not start unexpected external requests.
 
-Hosting configuration has been prepared and local/subpath verification passed. **No remote repository, account, domain or hosted deployment has been created by this audit.** Pricing and limits above were checked on 9 October 2026 and may change.
+**Published on GitHub Pages on 9 October 2026.** Local/subpath checks and hosted HTTPS checks passed. See [PUBLICATION.md](PUBLICATION.md) for the deployed revision, workflow and live verification scope. No custom domain was configured. Pricing and limits above were checked on 9 October 2026 and may change.
