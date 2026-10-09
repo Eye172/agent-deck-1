@@ -8,7 +8,7 @@ A free, source-attributed catalog of agent architecture blueprints, with an offl
 
 Explore agent architectures, inspect their contracts and adapt them to your own stack. The six application domains are research, coding, private knowledge, data analysis, writing and support.
 
-The website and IDE package are designed for static publication at **https://Eye172.github.io/agent-deck/**. Deployment status is available in the repository's Actions tab.
+The website and IDE package are designed for static publication at **https://Eye172.github.io/agent-deck-1/**. Deployment status is available in the repository's Actions tab.
 
 ## Explore and export
 
@@ -44,8 +44,8 @@ See [IDE installation and commands](docs/IDE_INTEGRATION.md). Official discovery
 Requires Node.js 20 or newer; Node 24 is used in CI. No npm install is needed.
 
 ~~~sh
-git clone https://github.com/Eye172/agent-deck.git
-cd agent-deck
+git clone https://github.com/Eye172/agent-deck-1.git
+cd agent-deck-1
 node scripts/serve.mjs
 ~~~
 

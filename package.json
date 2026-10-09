@@ -14,9 +14,9 @@
   "description": "Free agent architecture blueprints and an offline IDE skill",
   "license": "MIT",
   "author": "Eye172",
-  "homepage": "https://Eye172.github.io/agent-deck/",
+  "homepage": "https://Eye172.github.io/agent-deck-1/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Eye172/agent-deck.git"
+    "url": "https://github.com/Eye172/agent-deck-1.git"
   }
 }

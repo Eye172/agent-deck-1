@@ -6,11 +6,11 @@ Agent Deck is a dependency-free static website. Deploy the generated **dist/** d
 
 Suitable for a public, open-source portfolio repository. GitHub Free supports Pages from public repositories. Its published-site limit is 1 GB and its soft bandwidth limit is 100 GB/month; see [official Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits).
 
-Build with Node 24 in a Pages Actions workflow and publish **dist as the Pages artifact**, rather than serving the source tree. The generated .nojekyll file prevents Jekyll processing for branch-based publishing. Relative paths have been tested under /agent-deck/, including fonts, deep links and downloads.
+Build with Node 24 in a Pages Actions workflow and publish **dist as the Pages artifact**, rather than serving the source tree. The generated .nojekyll file prevents Jekyll processing for branch-based publishing. Relative paths have been tested under /agent-deck-1/, including fonts, deep links and downloads.
 
 GitHub Pages does not apply Cloudflare/Netlify _headers rules. The generated HTML includes a CSP fallback, but frame-ancestors, X-Frame-Options and Permissions-Policy require host response-header support and do not come from that fallback.
 
-The repository includes [.github/workflows/pages.yml](../.github/workflows/pages.yml). It runs the Node tests, builds the website and portable skill, uploads only dist, and publishes successful main-branch builds. Pull requests run verification without deployment. Enable Settings → Pages → Source → GitHub Actions before the first deployment. The intended repository is Eye172/agent-deck; the intended URL is https://Eye172.github.io/agent-deck/.
+The repository includes [.github/workflows/pages.yml](../.github/workflows/pages.yml). It runs the Node tests, builds the website and portable skill, uploads only dist, and publishes successful main-branch builds. Pull requests run verification without deployment. Enable Settings → Pages → Source → GitHub Actions before the first deployment. The intended repository is Eye172/agent-deck-1; the intended URL is https://Eye172.github.io/agent-deck-1/.
 
 ## Alternative: Cloudflare Pages
 
@@ -38,7 +38,7 @@ The project includes netlify.toml with the build command, dist output and Node 2
 
 ## Static IDE distribution
 
-The build now includes agent-deck-skill.zip, its SHA-256 file and ide-guide.md. These are ordinary static downloads and work with GitHub Pages. The locally simulated /agent-deck/ deployment includes a verified ZIP download. No backend, MCP service, API key or paid package host is required. See [IDE_INTEGRATION.md](IDE_INTEGRATION.md). The final artifact has 804 files and approximately 20.2 MB of content, with the same approximately 6.69 MiB largest file.
+The build now includes agent-deck-skill.zip, its SHA-256 file and ide-guide.md. These are ordinary static downloads and work with GitHub Pages. The locally simulated /agent-deck-1/ deployment includes a verified ZIP download. No backend, MCP service, API key or paid package host is required. See [IDE_INTEGRATION.md](IDE_INTEGRATION.md). The final artifact has 804 files and approximately 20.2 MB of content, with the same approximately 6.69 MiB largest file.
 
 ## Before publishing
 
