@@ -1,20 +1,23 @@
 import {mkdir,writeFile,copyFile,cp,rm,readFile} from 'node:fs/promises';
 import path from 'node:path';
+import {validateConfig} from '../analytics-policy.mjs';
 import {buildSkill} from './build-skill.mjs';
 import {staticHeaders,securityHeaders} from './security-headers.mjs';
 import {fileURLToPath} from 'node:url';
 import {catalog,families,blueprint,markdown,sources} from '../src/catalog.mjs';
 export const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 export async function build(){
+ const analytics=validateConfig(JSON.parse(await readFile(path.join(root,'analytics.config.json'),'utf8')));
  const out=path.resolve(root,'dist');
  if(!out.startsWith(root+path.sep)||path.basename(out)!=='dist')throw new Error('Unsafe build output path');
  await rm(out,{recursive:true,force:true});
  await mkdir(path.join(out,'presets'),{recursive:true});
  await mkdir(path.join(out,'lib'),{recursive:true});
  await mkdir(path.join(out,'assets'),{recursive:true});
- for(const name of ['index.html','styles.css','app.mjs','LICENSE','THIRD_PARTY_NOTICES.md','404.html'])await copyFile(path.join(root,name),path.join(out,name));
+ for(const name of ['index.html','styles.css','app.mjs','analytics.mjs','analytics-policy.mjs','privacy.html','LICENSE','THIRD_PARTY_NOTICES.md','404.html'])await copyFile(path.join(root,name),path.join(out,name));
  await cp(path.join(root,'research'),path.join(out,'research'),{recursive:true});
- for(const page of ['index.html','404.html','research/index.html','research/paper.html']){
+ await writeFile(path.join(out,'analytics-config.mjs'),'export default '+JSON.stringify({...analytics,presetIds:catalog.map(x=>x.id)})+';\n');
+ for(const page of ['index.html','404.html','privacy.html','research/index.html','research/paper.html']){
   const html=await readFile(path.join(out,page),'utf8');
   const policy=securityHeaders['Content-Security-Policy'].replace(/; frame-ancestors 'none'/,'');
   await writeFile(path.join(out,page),html.replace('<head>','<head>\n<meta http-equiv="Content-Security-Policy" content="'+policy+'">'));

@@ -26,7 +26,7 @@
     "replay.py": "59321082151168badc6c5c6d0ff8468e933819957705bd35042a45cb4a80b485"
   },
   "repository_html_sha256": {
-    "index.html": "e1891b07252315fcc15e82621a10bd70190bd591c2603f452f1e9a925a15e57b",
+    "index.html": "de6ea98fdad0311167ab37c58a75aa702a3d7461aa0dd925cc76682e6d119436",
     "paper.html": "3ee5f3501c4092688144d26794463ef4b717e9ddb82e50a193373252382d7c8d"
   },
   "hash_scope": "Download and asset hashes identify exact repository/served bytes. HTML hashes identify repository source before the build injects a CSP meta tag; paper text/data are unchanged."

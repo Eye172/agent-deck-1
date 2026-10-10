@@ -1,3 +1,4 @@
+import {track} from './analytics.mjs';
 import {explainArchitecture} from './lib/explain.mjs';
 import {renderGraph,wiringMarkup,nodeInspector} from './lib/diagram-view.mjs';
 import {runtimeContract} from './lib/contracts.mjs';
@@ -140,7 +141,7 @@ function openDetail(id){
  current=item;currentTab='overview';diagramSelection=explainArchitecture(item).groups[0].nodeIds[0];
  $('detail-eyebrow').textContent='CARTRIDGE '+item.number+' / '+item.category.toUpperCase();
  $('detail-content').innerHTML='<div class="detail-top"><div><h2 id="detail-title">'+escape(item.title)+'</h2><p class="detail-subtitle">'+escape(item.subtitle)+'</p><div class="detail-tags"><span>'+item.level+'</span><span>'+escape(item.topology)+'</span><span>'+item.scenarioData.name+'</span></div></div><button class="detail-save" data-save="'+item.id+'" aria-pressed="'+saved.includes(id)+'" aria-label="'+(saved.includes(id)?'Unsave ':'Save ')+escape(item.title)+'">'+starIcon(saved.includes(id))+'</button></div><div class="detail-tabs" role="tablist" aria-label="Preset details">'+tabs.map(([key,name])=>'<button role="tab" id="tab-'+key+'" data-tab="'+key+'" aria-controls="detail-panel" aria-selected="'+(key===currentTab)+'" tabindex="'+(key===currentTab?0:-1)+'">'+name+'</button>').join('')+'</div><section id="detail-panel" class="detail-body" role="tabpanel" aria-labelledby="tab-overview" tabindex="0"></section><div class="detail-footer"><span>Original adaptation · MIT · Evaluation pending</span><div class="downloads"><a class="button secondary" href="./presets/'+id+'.md" download="'+id+'.md">Markdown ↓</a><a class="button primary" href="./presets/'+id+'.json" download="'+id+'.json">JSON blueprint ↓</a></div></div>';
- renderDetailTab();openDialog('detail');syncURL();
+ renderDetailTab();openDialog('detail');syncURL();track('preset-open',{preset:id});
 }
 function selectDiagramNode(id){
  if(!current||currentTab!=='wiring')return;
@@ -214,6 +215,7 @@ $('sort').addEventListener('change',()=>{sort=$('sort').value;renderCatalog();sy
 $('filters').addEventListener('change',event=>{
  const input=event.target;if(!input.dataset.facet)return;
  const {facet,value}=input.dataset;
+ track('filter-change',{facet,action:input.checked?'add':'remove'});
  state[facet]=input.checked?[...state[facet],value]:state[facet].filter(v=>v!==value);
  limit=24;renderCatalog();syncURL();
 });
@@ -255,7 +257,7 @@ document.addEventListener('click',event=>{
   if(compare.length<2)closeDialog($('comparison'));else renderComparison();
  } else if(target.dataset.copy==='system')copy(systemPrompt(current),$('prompt-code'));
  else if(target.dataset.copy==='json')copy($('json-code').textContent,$('json-code'));
- else if(target.id==='download-custom')download($('json-code').textContent+'\n',current.id+'.json');
+ else if(target.id==='download-custom'){download($('json-code').textContent+'\n',current.id+'.json');track('preset-download',{preset:current.id,format:'custom-json'});}
 });
 document.addEventListener('submit',event=>{
  if(event.target.id!=='preset-form')return;event.preventDefault();
@@ -298,8 +300,9 @@ $('mascot-button').addEventListener('click',()=>{
  notify('Hello, builder. Pick an idea and follow the wiring.');
 });
 $('compare-clear').addEventListener('click',()=>{compare=[];renderCatalog();});
-$('compare-open').addEventListener('click',()=>{if(compare.length>=2){renderComparison();openDialog('comparison');}});
+$('compare-open').addEventListener('click',()=>{if(compare.length>=2){renderComparison();openDialog('comparison');track('compare-open',{count:compare.length});}});
 $('download-all').addEventListener('click',()=>{
+ track('collection-download');
  const a=document.createElement('a');a.href='./catalog.json';a.download='agent-deck-384-blueprints.json';document.body.append(a);a.click();a.remove();
 });
 addEventListener('popstate',()=>{

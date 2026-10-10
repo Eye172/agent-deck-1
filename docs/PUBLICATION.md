@@ -41,3 +41,12 @@ The research application revision `04ab127d9c102b1688fe451ad76b282805f2c0a5` dep
 Eight hosted Chromium verification groups passed: the footer link and existing catalogue search; research layouts at 1440, 768, 390 and 320 px; all linked materials and their canonical SHA-256 values; an actual browser evidence ZIP download; and the complete HTML paper with 12 tables. No page errors, page overflow or off-origin resource requests were observed. PDF and evidence ZIP bytes match the sealed original study. Independent HTTPS byte comparisons also confirm that the full catalogue JSON and IDE skill ZIP are unchanged from before the supplement.
 
 [Open Research](https://eye172.github.io/agent-deck-1/research/index.html). Local reports are retained in ignored `output/research-work/`; no machine-specific browser profiles are committed. These publication checks establish delivery and sampled browser behavior, not model performance or independent scientific review. This documentation update does not change the verified application artifact.
+
+
+## Usage analytics — 10 October 2026
+
+Optional Umami Cloud collection now measures landing/research-overview page views and bounded catalogue actions. There are no accounts for visitors. Search text, URL query strings/fragments, referrer paths, saved shelves and custom blueprint content are excluded. DNT, GPC, local preview, unavailable browser storage and stored opt-out suppress tracking. The privacy page exposes the browser preference and explains provider processing and count limits. The offline IDE skill is unchanged and sends no usage data.
+
+Local verification passed 36 unit tests, six analytics browser groups using the current public vendor script with the collector intercepted, and eight research browser groups. The real vendor snapshot used for compatibility had SHA-256 91a876d767646fd5b7701b6fabf97f8a99ae53b94e7e5b58d465bad1e5d763e0. No synthetic test visitors were sent to the service. These checks establish client behavior; account-side delivery is checked separately after deployment. Historical no-analytics/no-external-request statements above describe the earlier build.
+
+Catalogue JSON, IDE skill ZIP and all sealed research downloads retain their prior bytes. Only the research overview HTML and its recorded source hash change for the shared Privacy link and analytics module. The collector is explicitly pinned to gateway.umami.is and the script to cloud.umami.is in CSP; no broad wildcard was added.

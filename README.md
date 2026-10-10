@@ -68,6 +68,10 @@ Diagrams show phase dependencies, logical actor identity, bounded worker capacit
 
 Source authors remain credited in each preset. No ReasonMaxxer implementation, third-party reference photograph, trained model or dataset is redistributed.
 
+## Website analytics
+
+The published website can use Umami Cloud for page views and bounded catalogue actions. Search text, URL queries/fragments, blueprint settings and saved shelves are excluded. Local previews and the offline IDE skill do not send analytics. Browser privacy signals and the [privacy preference](https://eye172.github.io/agent-deck-1/privacy.html) are respected. See [configuration, events and verification](docs/ANALYTICS.md).
+
 ## Research supplement
 
 [Research overview](https://eye172.github.io/agent-deck-1/research/index.html) · [Paper and open materials](research/README.md)
