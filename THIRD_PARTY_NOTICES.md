@@ -12,3 +12,7 @@ Font files are self-hosted and unmodified. Their font licenses are separate from
 ## Architecture references
 
 Blueprints are original design specifications informed by the primary sources credited in each preset and the reading room. Referencing a mechanism does not claim authorship of the research. The primary works keep their own licenses and copyright. See docs/RESEARCH.md and docs/CONTENT_METHOD.md.
+
+## Research supplement
+
+The research paper, synthetic task data and original apparatus code are AI-assisted project materials. Cited works retain their own rights. The sealed evidence ZIP bundles tokenizer files under Apache-2.0 with the full notice retained inside `structured-study/output/THIRD-PARTY-tokenizers-LICENSE.txt`. Public model metadata and provenance are included; model weights and native Ollama binaries are not redistributed. The study is a bounded workflow evaluation, not performance validation of the catalogue.

@@ -23,3 +23,13 @@ Reports and screenshots are generated locally in output/hosted and are ignored b
 ## Scope
 
 These are design specifications, not benchmarked executable agents. Hosted checks do not establish model quality, actual discovery inside all four IDE products, physical-device behavior or Safari/Firefox compatibility. See [VERIFICATION.md](VERIFICATION.md) and [IDE_INTEGRATION.md](IDE_INTEGRATION.md).
+
+## Research supplement — 10 October 2026
+
+A footer link and README section now connect Agent Deck to an AI-assisted research supplement. The supplement publishes the sealed 14-page working paper, full HTML paper, six PNG/SVG figure assets, per-trial CSV, statistics, diagnostics, a 23.22 MiB evidence ZIP and an offline replay helper.
+
+The first series accounts for 2,880 assignments: 2,876 completed and four unknown infrastructure-interrupted outcomes. Completed trials contain 8,549 calls and 6,155,745 measured tokens. Results are limited to four finite-plan workflows, six synthetic templates and two related Qwen 0.5B checkpoints; catalogue presets are not marked evaluated. Planned follow-up work and independent-review status are explicit.
+
+The evidence archive and PDF preserve their original SHA-256 values. Research file bytes are exempted from Git line-ending normalization so the CSV and publication hashes survive a Linux Pages checkout. The build injects CSP metadata into the overview and full HTML paper; publication metadata distinguishes HTML source hashes from exact download hashes. CI checks research hashes, CSV counts and costs before deployment.
+
+Local verification passed the 30 existing Agent Deck tests and eight research browser groups, including 1440/768/390/320 px layouts, project-subpath navigation, material responses and an actual canonical ZIP download. No browser errors or external resource requests were observed. The existing catalogue, actor assets and IDE skill ZIP remain byte-identical; their prior performance disclaimers remain in place. Hosted deployment verification is recorded separately after publication.

@@ -1,0 +1,382 @@
+{
+  "actual_utc": "2026-10-09T23:23:03.108689+00:00",
+  "scope": "Post-hoc descriptive diagnostics, no new inference or primary-estimand change; overlapping error categories are not mutually exclusive",
+  "conditions": [
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "condition": "single-contract",
+      "observed_trials": 360,
+      "empty_final_plans": 0,
+      "duplicate_nonrecovery_final_plans": 48,
+      "premature_nonfinal_claim_events": 0,
+      "trials_with_premature_nonfinal_claim": 0,
+      "correct_not_accepted": 0,
+      "correct_accepted": 59,
+      "accepted_final_artifacts": 223,
+      "acceptance_coverage_observed": 0.6194444444444445,
+      "conditional_accepted_error_observed": 0.7354260089686099,
+      "trials_with_correct_installed_plan_at_any_recorded_stage": 59,
+      "trials_with_prior_correct_plan_but_wrong_final": 0,
+      "changed_installations_from_correct_to_wrong": 0,
+      "stage_grade_scope": "Frozen external oracle, post hoc; readonly proposals excluded; recovery length omission retained. Descriptive transitions do not identify hidden reasoning or causal mediation.",
+      "model_returns": 768,
+      "roles": {
+        "single": 768
+      },
+      "returned_finish_reasons": {
+        "stop": 768
+      },
+      "measured_prompt_tokens": 607595,
+      "backend_output_tokens": 35745,
+      "backend_cached_prompt_tokens_where_available": 351932,
+      "returns_without_cached_count": 0
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "condition": "single-open",
+      "observed_trials": 360,
+      "empty_final_plans": 0,
+      "duplicate_nonrecovery_final_plans": 42,
+      "premature_nonfinal_claim_events": 0,
+      "trials_with_premature_nonfinal_claim": 0,
+      "correct_not_accepted": 0,
+      "correct_accepted": 62,
+      "accepted_final_artifacts": 357,
+      "acceptance_coverage_observed": 0.9916666666666667,
+      "conditional_accepted_error_observed": 0.8263305322128851,
+      "trials_with_correct_installed_plan_at_any_recorded_stage": 62,
+      "trials_with_prior_correct_plan_but_wrong_final": 0,
+      "changed_installations_from_correct_to_wrong": 0,
+      "stage_grade_scope": "Frozen external oracle, post hoc; readonly proposals excluded; recovery length omission retained. Descriptive transitions do not identify hidden reasoning or causal mediation.",
+      "model_returns": 369,
+      "roles": {
+        "single": 369
+      },
+      "returned_finish_reasons": {
+        "stop": 369
+      },
+      "measured_prompt_tokens": 160684,
+      "backend_output_tokens": 17610,
+      "backend_cached_prompt_tokens_where_available": 39767,
+      "returns_without_cached_count": 0
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "condition": "staged-contract",
+      "observed_trials": 359,
+      "empty_final_plans": 0,
+      "duplicate_nonrecovery_final_plans": 28,
+      "premature_nonfinal_claim_events": 336,
+      "trials_with_premature_nonfinal_claim": 215,
+      "correct_not_accepted": 52,
+      "correct_accepted": 11,
+      "accepted_final_artifacts": 106,
+      "acceptance_coverage_observed": 0.29526462395543174,
+      "conditional_accepted_error_observed": 0.8962264150943396,
+      "trials_with_correct_installed_plan_at_any_recorded_stage": 63,
+      "trials_with_prior_correct_plan_but_wrong_final": 0,
+      "changed_installations_from_correct_to_wrong": 0,
+      "stage_grade_scope": "Frozen external oracle, post hoc; readonly proposals excluded; recovery length omission retained. Descriptive transitions do not identify hidden reasoning or causal mediation.",
+      "model_returns": 1436,
+      "roles": {
+        "planner": 359,
+        "worker": 718,
+        "reviewer": 359
+      },
+      "returned_finish_reasons": {
+        "stop": 1436
+      },
+      "measured_prompt_tokens": 1018495,
+      "backend_output_tokens": 63757,
+      "backend_cached_prompt_tokens_where_available": 385098,
+      "returns_without_cached_count": 0
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "condition": "staged-open",
+      "observed_trials": 360,
+      "empty_final_plans": 0,
+      "duplicate_nonrecovery_final_plans": 28,
+      "premature_nonfinal_claim_events": 325,
+      "trials_with_premature_nonfinal_claim": 194,
+      "correct_not_accepted": 59,
+      "correct_accepted": 3,
+      "accepted_final_artifacts": 135,
+      "acceptance_coverage_observed": 0.375,
+      "conditional_accepted_error_observed": 0.9777777777777777,
+      "trials_with_correct_installed_plan_at_any_recorded_stage": 63,
+      "trials_with_prior_correct_plan_but_wrong_final": 1,
+      "changed_installations_from_correct_to_wrong": 1,
+      "stage_grade_scope": "Frozen external oracle, post hoc; readonly proposals excluded; recovery length omission retained. Descriptive transitions do not identify hidden reasoning or causal mediation.",
+      "model_returns": 1440,
+      "roles": {
+        "planner": 360,
+        "worker": 720,
+        "reviewer": 360
+      },
+      "returned_finish_reasons": {
+        "stop": 1440
+      },
+      "measured_prompt_tokens": 1014558,
+      "backend_output_tokens": 63866,
+      "backend_cached_prompt_tokens_where_available": 385605,
+      "returns_without_cached_count": 0
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "condition": "single-contract",
+      "observed_trials": 359,
+      "empty_final_plans": 315,
+      "duplicate_nonrecovery_final_plans": 1,
+      "premature_nonfinal_claim_events": 0,
+      "trials_with_premature_nonfinal_claim": 0,
+      "correct_not_accepted": 1,
+      "correct_accepted": 0,
+      "accepted_final_artifacts": 12,
+      "acceptance_coverage_observed": 0.033426183844011144,
+      "conditional_accepted_error_observed": 1.0,
+      "trials_with_correct_installed_plan_at_any_recorded_stage": 1,
+      "trials_with_prior_correct_plan_but_wrong_final": 0,
+      "changed_installations_from_correct_to_wrong": 0,
+      "stage_grade_scope": "Frozen external oracle, post hoc; readonly proposals excluded; recovery length omission retained. Descriptive transitions do not identify hidden reasoning or causal mediation.",
+      "model_returns": 1188,
+      "roles": {
+        "single": 1188
+      },
+      "returned_finish_reasons": {
+        "stop": 1188
+      },
+      "measured_prompt_tokens": 1010011,
+      "backend_output_tokens": 18585,
+      "backend_cached_prompt_tokens_where_available": 651159,
+      "returns_without_cached_count": 0
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "condition": "single-open",
+      "observed_trials": 360,
+      "empty_final_plans": 296,
+      "duplicate_nonrecovery_final_plans": 7,
+      "premature_nonfinal_claim_events": 0,
+      "trials_with_premature_nonfinal_claim": 0,
+      "correct_not_accepted": 2,
+      "correct_accepted": 2,
+      "accepted_final_artifacts": 266,
+      "acceptance_coverage_observed": 0.7388888888888889,
+      "conditional_accepted_error_observed": 0.9924812030075187,
+      "trials_with_correct_installed_plan_at_any_recorded_stage": 4,
+      "trials_with_prior_correct_plan_but_wrong_final": 0,
+      "changed_installations_from_correct_to_wrong": 0,
+      "stage_grade_scope": "Frozen external oracle, post hoc; readonly proposals excluded; recovery length omission retained. Descriptive transitions do not identify hidden reasoning or causal mediation.",
+      "model_returns": 476,
+      "roles": {
+        "single": 476
+      },
+      "returned_finish_reasons": {
+        "stop": 476
+      },
+      "measured_prompt_tokens": 249573,
+      "backend_output_tokens": 9030,
+      "backend_cached_prompt_tokens_where_available": 99213,
+      "returns_without_cached_count": 0
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "condition": "staged-contract",
+      "observed_trials": 359,
+      "empty_final_plans": 333,
+      "duplicate_nonrecovery_final_plans": 2,
+      "premature_nonfinal_claim_events": 39,
+      "trials_with_premature_nonfinal_claim": 39,
+      "correct_not_accepted": 0,
+      "correct_accepted": 0,
+      "accepted_final_artifacts": 0,
+      "acceptance_coverage_observed": 0.0,
+      "conditional_accepted_error_observed": null,
+      "trials_with_correct_installed_plan_at_any_recorded_stage": 0,
+      "trials_with_prior_correct_plan_but_wrong_final": 0,
+      "changed_installations_from_correct_to_wrong": 0,
+      "stage_grade_scope": "Frozen external oracle, post hoc; readonly proposals excluded; recovery length omission retained. Descriptive transitions do not identify hidden reasoning or causal mediation.",
+      "model_returns": 1436,
+      "roles": {
+        "planner": 359,
+        "worker": 718,
+        "reviewer": 359
+      },
+      "returned_finish_reasons": {
+        "stop": 1436
+      },
+      "measured_prompt_tokens": 937440,
+      "backend_output_tokens": 20740,
+      "backend_cached_prompt_tokens_where_available": 380592,
+      "returns_without_cached_count": 0
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "condition": "staged-open",
+      "observed_trials": 359,
+      "empty_final_plans": 297,
+      "duplicate_nonrecovery_final_plans": 5,
+      "premature_nonfinal_claim_events": 49,
+      "trials_with_premature_nonfinal_claim": 40,
+      "correct_not_accepted": 0,
+      "correct_accepted": 0,
+      "accepted_final_artifacts": 42,
+      "acceptance_coverage_observed": 0.116991643454039,
+      "conditional_accepted_error_observed": 1.0,
+      "trials_with_correct_installed_plan_at_any_recorded_stage": 0,
+      "trials_with_prior_correct_plan_but_wrong_final": 0,
+      "changed_installations_from_correct_to_wrong": 0,
+      "stage_grade_scope": "Frozen external oracle, post hoc; readonly proposals excluded; recovery length omission retained. Descriptive transitions do not identify hidden reasoning or causal mediation.",
+      "model_returns": 1436,
+      "roles": {
+        "planner": 359,
+        "worker": 718,
+        "reviewer": 359
+      },
+      "returned_finish_reasons": {
+        "stop": 1436
+      },
+      "measured_prompt_tokens": 905169,
+      "backend_output_tokens": 22887,
+      "backend_cached_prompt_tokens_where_available": 380526,
+      "returns_without_cached_count": 0
+    }
+  ],
+  "requirement_errors": [
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "family": "capacity",
+      "observed_trials": 240,
+      "failed_requirement_counts": {
+        "exclusive_groups": 132,
+        "optimal_value": 240,
+        "unique_budget": 240
+      },
+      "interpretation": "Overlapping frozen groups; recovery partial groups omit public length, separately audited by strict grammar reference"
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "family": "dependency",
+      "observed_trials": 240,
+      "failed_requirement_counts": {
+        "complete_unique": 3,
+        "deadlines": 240,
+        "dependency_order": 192
+      },
+      "interpretation": "Overlapping frozen groups; recovery partial groups omit public length, separately audited by strict grammar reference"
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "family": "freshness",
+      "observed_trials": 239,
+      "failed_requirement_counts": {
+        "ascii_order": 226,
+        "membership": 215,
+        "unique": 110
+      },
+      "interpretation": "Overlapping frozen groups; recovery partial groups omit public length, separately audited by strict grammar reference"
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "family": "ranking",
+      "observed_trials": 240,
+      "failed_requirement_counts": {
+        "ascii_tie_order": 239,
+        "max_consolidation_topk": 237,
+        "size_unique": 135
+      },
+      "interpretation": "Overlapping frozen groups; recovery partial groups omit public length, separately audited by strict grammar reference"
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "family": "recovery",
+      "observed_trials": 240,
+      "failed_requirement_counts": {
+        "all_transactions_checkpointed": 1,
+        "final_values": 1,
+        "legal_transitions": 7,
+        "required_crashes": 0
+      },
+      "interpretation": "Overlapping frozen groups; recovery partial groups omit public length, separately audited by strict grammar reference"
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "family": "validation",
+      "observed_trials": 240,
+      "failed_requirement_counts": {
+        "ascii_order": 240,
+        "membership": 240,
+        "unique": 0
+      },
+      "interpretation": "Overlapping frozen groups; recovery partial groups omit public length, separately audited by strict grammar reference"
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "family": "capacity",
+      "observed_trials": 239,
+      "failed_requirement_counts": {
+        "exclusive_groups": 16,
+        "optimal_value": 238,
+        "unique_budget": 35
+      },
+      "interpretation": "Overlapping frozen groups; recovery partial groups omit public length, separately audited by strict grammar reference"
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "family": "dependency",
+      "observed_trials": 240,
+      "failed_requirement_counts": {
+        "complete_unique": 215,
+        "deadlines": 26,
+        "dependency_order": 19
+      },
+      "interpretation": "Overlapping frozen groups; recovery partial groups omit public length, separately audited by strict grammar reference"
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "family": "freshness",
+      "observed_trials": 240,
+      "failed_requirement_counts": {
+        "ascii_order": 240,
+        "membership": 240,
+        "unique": 0
+      },
+      "interpretation": "Overlapping frozen groups; recovery partial groups omit public length, separately audited by strict grammar reference"
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "family": "ranking",
+      "observed_trials": 240,
+      "failed_requirement_counts": {
+        "ascii_tie_order": 240,
+        "max_consolidation_topk": 240,
+        "size_unique": 239
+      },
+      "interpretation": "Overlapping frozen groups; recovery partial groups omit public length, separately audited by strict grammar reference"
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "family": "recovery",
+      "observed_trials": 238,
+      "failed_requirement_counts": {
+        "all_transactions_checkpointed": 233,
+        "final_values": 233,
+        "legal_transitions": 0,
+        "required_crashes": 173
+      },
+      "interpretation": "Overlapping frozen groups; recovery partial groups omit public length, separately audited by strict grammar reference"
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "family": "validation",
+      "observed_trials": 240,
+      "failed_requirement_counts": {
+        "ascii_order": 240,
+        "membership": 240,
+        "unique": 0
+      },
+      "interpretation": "Overlapping frozen groups; recovery partial groups omit public length, separately audited by strict grammar reference"
+    }
+  ]
+}

@@ -3,3 +3,10 @@
 *.png -text
 *.zip -text
 assets/fonts/*-OFL.txt whitespace=-blank-at-eol
+
+# Keep sealed research downloads and manifest hashes identical across checkouts.
+research/** -text whitespace=cr-at-eol
+*.pdf binary
+
+# Matplotlib figure snapshots retain generator whitespace and exact hashes.
+research/figures/*.svg whitespace=cr-at-eol,-blank-at-eol

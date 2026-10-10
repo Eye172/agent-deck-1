@@ -1,0 +1,903 @@
+{
+  "assigned": 2880,
+  "observed": 2876,
+  "missing": 4,
+  "actual_started_utc": "2026-10-09T21:03:17.631184+00:00",
+  "actual_ended_utc": "2026-10-09T23:20:05.861241+00:00",
+  "conditions": [
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "condition": "single-open",
+      "assigned": 360,
+      "observed": 360,
+      "correct": 62,
+      "success_fraction_observed": 0.17222222222222222,
+      "assigned_correctness_bounds": [
+        0.17222222222222222,
+        0.17222222222222222
+      ],
+      "wrong_solved_claims": 295,
+      "eligible_solved_claims": 357,
+      "wrong_claim_fraction": 0.8263305322128851,
+      "wrong_controller_acceptance": 295,
+      "actual_final_checks": 230,
+      "mean_calls": 1.025,
+      "mean_tokens": 495.2611111111111,
+      "mean_wall_seconds": 0.5743388888880469,
+      "mean_api_seconds": 0.567680555554883
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "condition": "single-contract",
+      "assigned": 360,
+      "observed": 360,
+      "correct": 59,
+      "success_fraction_observed": 0.1638888888888889,
+      "assigned_correctness_bounds": [
+        0.1638888888888889,
+        0.1638888888888889
+      ],
+      "wrong_solved_claims": 684,
+      "eligible_solved_claims": 743,
+      "wrong_claim_fraction": 0.9205921938088829,
+      "wrong_controller_acceptance": 164,
+      "actual_final_checks": 229,
+      "mean_calls": 2.1333333333333333,
+      "mean_tokens": 1787.0555555555557,
+      "mean_wall_seconds": 0.9017027777784582,
+      "mean_api_seconds": 0.8834361111111422
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "condition": "staged-open",
+      "assigned": 360,
+      "observed": 360,
+      "correct": 62,
+      "success_fraction_observed": 0.17222222222222222,
+      "assigned_correctness_bounds": [
+        0.17222222222222222,
+        0.17222222222222222
+      ],
+      "wrong_solved_claims": 132,
+      "eligible_solved_claims": 135,
+      "wrong_claim_fraction": 0.9777777777777777,
+      "wrong_controller_acceptance": 132,
+      "actual_final_checks": 240,
+      "mean_calls": 4,
+      "mean_tokens": 2995.6222222222223,
+      "mean_wall_seconds": 1.7824138888891967,
+      "mean_api_seconds": 1.7505388888890998
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "condition": "staged-contract",
+      "assigned": 360,
+      "observed": 359,
+      "correct": 63,
+      "success_fraction_observed": 0.17548746518105848,
+      "assigned_correctness_bounds": [
+        0.175,
+        0.17777777777777778
+      ],
+      "wrong_solved_claims": 162,
+      "eligible_solved_claims": 173,
+      "wrong_claim_fraction": 0.9364161849710982,
+      "wrong_controller_acceptance": 95,
+      "actual_final_checks": 243,
+      "mean_calls": 4,
+      "mean_tokens": 3014.6295264623955,
+      "mean_wall_seconds": 1.8203649025076085,
+      "mean_api_seconds": 1.7883175487469876
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "condition": "single-open",
+      "assigned": 360,
+      "observed": 360,
+      "correct": 4,
+      "success_fraction_observed": 0.011111111111111112,
+      "assigned_correctness_bounds": [
+        0.011111111111111112,
+        0.011111111111111112
+      ],
+      "wrong_solved_claims": 264,
+      "eligible_solved_claims": 266,
+      "wrong_claim_fraction": 0.9924812030075187,
+      "wrong_controller_acceptance": 264,
+      "actual_final_checks": 21,
+      "mean_calls": 1.3222222222222222,
+      "mean_tokens": 718.3416666666667,
+      "mean_wall_seconds": 0.5107555555541896,
+      "mean_api_seconds": 0.5017805555547562
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "condition": "single-contract",
+      "assigned": 360,
+      "observed": 359,
+      "correct": 1,
+      "success_fraction_observed": 0.002785515320334262,
+      "assigned_correctness_bounds": [
+        0.002777777777777778,
+        0.005555555555555556
+      ],
+      "wrong_solved_claims": 867,
+      "eligible_solved_claims": 867,
+      "wrong_claim_fraction": 1.0,
+      "wrong_controller_acceptance": 12,
+      "actual_final_checks": 13,
+      "mean_calls": 3.3091922005571033,
+      "mean_tokens": 2865.1699164345405,
+      "mean_wall_seconds": 0.8483593314754762,
+      "mean_api_seconds": 0.8190668523691018
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "condition": "staged-open",
+      "assigned": 360,
+      "observed": 359,
+      "correct": 0,
+      "success_fraction_observed": 0.0,
+      "assigned_correctness_bounds": [
+        0.0,
+        0.002777777777777778
+      ],
+      "wrong_solved_claims": 42,
+      "eligible_solved_claims": 42,
+      "wrong_claim_fraction": 1.0,
+      "wrong_controller_acceptance": 42,
+      "actual_final_checks": 19,
+      "mean_calls": 4,
+      "mean_tokens": 2585.114206128134,
+      "mean_wall_seconds": 1.2370389972161306,
+      "mean_api_seconds": 1.208701949864613
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "condition": "staged-contract",
+      "assigned": 360,
+      "observed": 359,
+      "correct": 0,
+      "success_fraction_observed": 0.0,
+      "assigned_correctness_bounds": [
+        0.0,
+        0.002777777777777778
+      ],
+      "wrong_solved_claims": 70,
+      "eligible_solved_claims": 70,
+      "wrong_claim_fraction": 1.0,
+      "wrong_controller_acceptance": 0,
+      "actual_final_checks": 8,
+      "mean_calls": 4,
+      "mean_tokens": 2669.025069637883,
+      "mean_wall_seconds": 1.2556239554316744,
+      "mean_api_seconds": 1.2274651810605324
+    }
+  ],
+  "models": {
+    "qwen2.5-coder:0.5b": {
+      "primary_contract_contrast": {
+        "estimate": null,
+        "identification_bounds": [
+          -0.002777777777777777,
+          -0.0013888888888888883
+        ],
+        "percentile_95_envelope": [
+          -0.008333333333333333,
+          0.005555555555555556
+        ],
+        "interpretation": "Paired generator-conditional percentile endpoints across extreme missing-outcome bounds; NOT full model/template-population inference",
+        "n_instances": 120,
+        "missingness_amendment": true
+      },
+      "complete_case_contract_descriptive": -0.0028011204481792713,
+      "complete_case_instances": 119,
+      "orchestration_complete_case_descriptive": 0.005602240896358544,
+      "interaction_complete_case_descriptive": 0.011204481792717089,
+      "deduplicated_contract_descriptive": -0.0024305555555555565,
+      "deduplication_scope": "Post hoc, equal-weight unique payloads within cells; cells equal-weight; incomplete groups omitted. Not primary inference.",
+      "no_preflight_overlap_contract_descriptive": -0.00046296296296296303,
+      "no_preflight_overlap_unique_complete_payloads": 109,
+      "no_preflight_overlap_scope": "Post hoc, exact preflight overlaps excluded; unique payloads equal-weight within cells, cells equal-weight; incomplete groups omitted. Not primary inference or strict unseen-template holdout."
+    },
+    "qwen2.5:0.5b": {
+      "primary_contract_contrast": {
+        "estimate": null,
+        "identification_bounds": [
+          -0.005555555555555555,
+          -0.0013888888888888887
+        ],
+        "percentile_95_envelope": [
+          -0.00972222222222222,
+          0.0027777777777777775
+        ],
+        "interpretation": "Paired generator-conditional percentile endpoints across extreme missing-outcome bounds; NOT full model/template-population inference",
+        "n_instances": 120,
+        "missingness_amendment": true
+      },
+      "complete_case_contract_descriptive": -0.0028490028490028487,
+      "complete_case_instances": 117,
+      "orchestration_complete_case_descriptive": -0.005698005698005697,
+      "interaction_complete_case_descriptive": 0.005698005698005697,
+      "deduplicated_contract_descriptive": -0.0023148148148148147,
+      "deduplication_scope": "Post hoc, equal-weight unique payloads within cells; cells equal-weight; incomplete groups omitted. Not primary inference.",
+      "no_preflight_overlap_contract_descriptive": -0.001736111111111111,
+      "no_preflight_overlap_unique_complete_payloads": 107,
+      "no_preflight_overlap_scope": "Post hoc, exact preflight overlaps excluded; unique payloads equal-weight within cells, cells equal-weight; incomplete groups omitted. Not primary inference or strict unseen-template holdout."
+    }
+  },
+  "families": [
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "family": "capacity",
+      "condition": "single-open",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.15
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "family": "capacity",
+      "condition": "single-contract",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.15
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "family": "capacity",
+      "condition": "staged-open",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.15
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "family": "capacity",
+      "condition": "staged-contract",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.15
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "family": "dependency",
+      "condition": "single-open",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.39999999999999997
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "family": "dependency",
+      "condition": "single-contract",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.38888888888888884
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "family": "dependency",
+      "condition": "staged-open",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.39999999999999997
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "family": "dependency",
+      "condition": "staged-contract",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.39444444444444443
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "family": "freshness",
+      "condition": "single-open",
+      "observed": 60,
+      "correct": 3,
+      "mean_partial": 0.2222222222222222
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "family": "freshness",
+      "condition": "single-contract",
+      "observed": 60,
+      "correct": 2,
+      "mean_partial": 0.17777777777777776
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "family": "freshness",
+      "condition": "staged-open",
+      "observed": 60,
+      "correct": 4,
+      "mean_partial": 0.25
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "family": "freshness",
+      "condition": "staged-contract",
+      "observed": 59,
+      "correct": 4,
+      "mean_partial": 0.2768361581920904
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "family": "ranking",
+      "condition": "single-open",
+      "observed": 60,
+      "correct": 1,
+      "mean_partial": 0.12777777777777777
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "family": "ranking",
+      "condition": "single-contract",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.17222222222222222
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "family": "ranking",
+      "condition": "staged-open",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.14444444444444443
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "family": "ranking",
+      "condition": "staged-contract",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.1611111111111111
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "family": "recovery",
+      "condition": "single-open",
+      "observed": 60,
+      "correct": 58,
+      "mean_partial": 0.9916666666666667
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "family": "recovery",
+      "condition": "single-contract",
+      "observed": 60,
+      "correct": 57,
+      "mean_partial": 0.9875
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "family": "recovery",
+      "condition": "staged-open",
+      "observed": 60,
+      "correct": 58,
+      "mean_partial": 0.9875
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "family": "recovery",
+      "condition": "staged-contract",
+      "observed": 60,
+      "correct": 59,
+      "mean_partial": 0.9958333333333333
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "family": "validation",
+      "condition": "single-open",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.3333333333333333
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "family": "validation",
+      "condition": "single-contract",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.3333333333333333
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "family": "validation",
+      "condition": "staged-open",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.3333333333333333
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "family": "validation",
+      "condition": "staged-contract",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.3333333333333333
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "family": "capacity",
+      "condition": "single-open",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.5722222222222222
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "family": "capacity",
+      "condition": "single-contract",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.6
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "family": "capacity",
+      "condition": "staged-open",
+      "observed": 59,
+      "correct": 0,
+      "mean_partial": 0.5988700564971751
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "family": "capacity",
+      "condition": "staged-contract",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.6166666666666666
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "family": "dependency",
+      "condition": "single-open",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.611111111111111
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "family": "dependency",
+      "condition": "single-contract",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.6666666666666666
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "family": "dependency",
+      "condition": "staged-open",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.6277777777777778
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "family": "dependency",
+      "condition": "staged-contract",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.6499999999999999
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "family": "freshness",
+      "condition": "single-open",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.3333333333333333
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "family": "freshness",
+      "condition": "single-contract",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.3333333333333333
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "family": "freshness",
+      "condition": "staged-open",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.3333333333333333
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "family": "freshness",
+      "condition": "staged-contract",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.3333333333333333
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "family": "ranking",
+      "condition": "single-open",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.005555555555555555
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "family": "ranking",
+      "condition": "single-contract",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.0
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "family": "ranking",
+      "condition": "staged-open",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.0
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "family": "ranking",
+      "condition": "staged-contract",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.0
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "family": "recovery",
+      "condition": "single-open",
+      "observed": 60,
+      "correct": 4,
+      "mean_partial": 0.3625
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "family": "recovery",
+      "condition": "single-contract",
+      "observed": 59,
+      "correct": 1,
+      "mean_partial": 0.326271186440678
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "family": "recovery",
+      "condition": "staged-open",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.3125
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "family": "recovery",
+      "condition": "staged-contract",
+      "observed": 59,
+      "correct": 0,
+      "mean_partial": 0.3135593220338983
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "family": "validation",
+      "condition": "single-open",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.3333333333333333
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "family": "validation",
+      "condition": "single-contract",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.3333333333333333
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "family": "validation",
+      "condition": "staged-open",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.3333333333333333
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "family": "validation",
+      "condition": "staged-contract",
+      "observed": 60,
+      "correct": 0,
+      "mean_partial": 0.3333333333333333
+    }
+  ],
+  "levels": [
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "provisional_level": "L1",
+      "condition": "single-open",
+      "observed": 90,
+      "correct": 19,
+      "mean_partial": 0.45555555555555555
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "provisional_level": "L1",
+      "condition": "single-contract",
+      "observed": 90,
+      "correct": 16,
+      "mean_partial": 0.46388888888888885
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "provisional_level": "L1",
+      "condition": "staged-open",
+      "observed": 90,
+      "correct": 18,
+      "mean_partial": 0.47129629629629627
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "provisional_level": "L1",
+      "condition": "staged-contract",
+      "observed": 90,
+      "correct": 18,
+      "mean_partial": 0.47129629629629627
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "provisional_level": "L2",
+      "condition": "single-open",
+      "observed": 90,
+      "correct": 14,
+      "mean_partial": 0.3675925925925926
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "provisional_level": "L2",
+      "condition": "single-contract",
+      "observed": 90,
+      "correct": 13,
+      "mean_partial": 0.3648148148148148
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "provisional_level": "L2",
+      "condition": "staged-open",
+      "observed": 90,
+      "correct": 15,
+      "mean_partial": 0.36666666666666664
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "provisional_level": "L2",
+      "condition": "staged-contract",
+      "observed": 90,
+      "correct": 15,
+      "mean_partial": 0.3925925925925926
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "provisional_level": "L3",
+      "condition": "single-open",
+      "observed": 90,
+      "correct": 15,
+      "mean_partial": 0.3222222222222222
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "provisional_level": "L3",
+      "condition": "single-contract",
+      "observed": 90,
+      "correct": 15,
+      "mean_partial": 0.3148148148148148
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "provisional_level": "L3",
+      "condition": "staged-open",
+      "observed": 90,
+      "correct": 14,
+      "mean_partial": 0.32407407407407407
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "provisional_level": "L3",
+      "condition": "staged-contract",
+      "observed": 89,
+      "correct": 15,
+      "mean_partial": 0.33707865168539325
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "provisional_level": "L4",
+      "condition": "single-open",
+      "observed": 90,
+      "correct": 14,
+      "mean_partial": 0.33796296296296297
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "provisional_level": "L4",
+      "condition": "single-contract",
+      "observed": 90,
+      "correct": 15,
+      "mean_partial": 0.3296296296296296
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "provisional_level": "L4",
+      "condition": "staged-open",
+      "observed": 90,
+      "correct": 15,
+      "mean_partial": 0.34814814814814815
+    },
+    {
+      "model": "qwen2.5-coder:0.5b",
+      "provisional_level": "L4",
+      "condition": "staged-contract",
+      "observed": 90,
+      "correct": 15,
+      "mean_partial": 0.34074074074074073
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "provisional_level": "L1",
+      "condition": "single-open",
+      "observed": 90,
+      "correct": 0,
+      "mean_partial": 0.39814814814814814
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "provisional_level": "L1",
+      "condition": "single-contract",
+      "observed": 90,
+      "correct": 0,
+      "mean_partial": 0.40555555555555556
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "provisional_level": "L1",
+      "condition": "staged-open",
+      "observed": 90,
+      "correct": 0,
+      "mean_partial": 0.40185185185185185
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "provisional_level": "L1",
+      "condition": "staged-contract",
+      "observed": 90,
+      "correct": 0,
+      "mean_partial": 0.4129629629629629
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "provisional_level": "L2",
+      "condition": "single-open",
+      "observed": 90,
+      "correct": 0,
+      "mean_partial": 0.35648148148148145
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "provisional_level": "L2",
+      "condition": "single-contract",
+      "observed": 89,
+      "correct": 0,
+      "mean_partial": 0.35767790262172283
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "provisional_level": "L2",
+      "condition": "staged-open",
+      "observed": 89,
+      "correct": 0,
+      "mean_partial": 0.37172284644194753
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "provisional_level": "L2",
+      "condition": "staged-contract",
+      "observed": 90,
+      "correct": 0,
+      "mean_partial": 0.3675925925925926
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "provisional_level": "L3",
+      "condition": "single-open",
+      "observed": 90,
+      "correct": 1,
+      "mean_partial": 0.33518518518518514
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "provisional_level": "L3",
+      "condition": "single-contract",
+      "observed": 90,
+      "correct": 0,
+      "mean_partial": 0.3675925925925926
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "provisional_level": "L3",
+      "condition": "staged-open",
+      "observed": 90,
+      "correct": 0,
+      "mean_partial": 0.3453703703703703
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "provisional_level": "L3",
+      "condition": "staged-contract",
+      "observed": 89,
+      "correct": 0,
+      "mean_partial": 0.36142322097378277
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "provisional_level": "L4",
+      "condition": "single-open",
+      "observed": 90,
+      "correct": 3,
+      "mean_partial": 0.3888888888888889
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "provisional_level": "L4",
+      "condition": "single-contract",
+      "observed": 90,
+      "correct": 1,
+      "mean_partial": 0.3759259259259259
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "provisional_level": "L4",
+      "condition": "staged-open",
+      "observed": 90,
+      "correct": 0,
+      "mean_partial": 0.34907407407407404
+    },
+    {
+      "model": "qwen2.5:0.5b",
+      "provisional_level": "L4",
+      "condition": "staged-contract",
+      "observed": 90,
+      "correct": 0,
+      "mean_partial": 0.35648148148148145
+    }
+  ],
+  "stop_reasons": {
+    "solved_finish": 1141,
+    "model_call_cap": 1598,
+    "unsolved_finish": 137
+  },
+  "infrastructure_interrupted": 4,
+  "all_assignments_attempted": true,
+  "semantic_payloads": {
+    "draws": 120,
+    "distinct": 115,
+    "exact_repeat_draws": 5,
+    "post_freeze_audit": true
+  },
+  "exact_preflight_overlap": {
+    "evaluation_draws": 6,
+    "evaluation_ids": [
+      "recovery-L1-evaluation-3",
+      "recovery-L1-evaluation-4",
+      "recovery-L3-evaluation-1",
+      "recovery-L3-evaluation-3",
+      "recovery-L4-evaluation-0",
+      "recovery-L4-evaluation-2"
+    ],
+    "distinct_semantic_payloads": 5,
+    "post_freeze": true,
+    "scope": "Exact cross-split payload overlap, not near-duplicate or unseen-template analysis"
+  },
+  "actual_tokens_observed_complete_trials": 6155745,
+  "actual_calls_observed_complete_trials": 8549,
+  "tokens_interrupted_request": "Unknown; completed partial turns retained, full interrupted request not reported as measured"
+}

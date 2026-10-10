@@ -1,0 +1,13 @@
+{
+  "actual_utc": "2026-10-10T00:08:02.926414+00:00",
+  "archive_sha256": "9653bb4723f27659a0b5e4c59d83bb5293db345a4e9ba6d583775d7690545760",
+  "crc_verified": true,
+  "manifest_files_verified": 7565,
+  "frozen_inputs_verified": 57,
+  "separate_extraction": "D:\\MiniProjects_1\\02-agent-research\\structured-study\\tmp\\delivery-replay-bd9b2867a2eb4abaaaf18af395eb1e0d",
+  "complete_trace_replay_passed": true,
+  "statistics_exact_match": true,
+  "portable_guard_fallback_exercised": true,
+  "no_inference_or_network_calls": true,
+  "scope": "Same-machine offline consistency check, not independent research replication"
+}

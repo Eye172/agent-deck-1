@@ -13,7 +13,8 @@ export async function build(){
  await mkdir(path.join(out,'lib'),{recursive:true});
  await mkdir(path.join(out,'assets'),{recursive:true});
  for(const name of ['index.html','styles.css','app.mjs','LICENSE','THIRD_PARTY_NOTICES.md','404.html'])await copyFile(path.join(root,name),path.join(out,name));
- for(const page of ['index.html','404.html']){
+ await cp(path.join(root,'research'),path.join(out,'research'),{recursive:true});
+ for(const page of ['index.html','404.html','research/index.html','research/paper.html']){
   const html=await readFile(path.join(out,page),'utf8');
   const policy=securityHeaders['Content-Security-Policy'].replace(/; frame-ancestors 'none'/,'');
   await writeFile(path.join(out,page),html.replace('<head>','<head>\n<meta http-equiv="Content-Security-Policy" content="'+policy+'">'));

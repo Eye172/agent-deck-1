@@ -68,6 +68,14 @@ Diagrams show phase dependencies, logical actor identity, bounded worker capacit
 
 Source authors remain credited in each preset. No ReasonMaxxer implementation, third-party reference photograph, trained model or dataset is redistributed.
 
+## Research supplement
+
+[Research overview](https://eye172.github.io/agent-deck-1/research/index.html) · [Paper and open materials](research/README.md)
+
+An AI-assisted companion study compares structural completion gates and role-staged workflows in small local models: **2,880 assigned attempts, 2,876 completed trials, four interrupted outcomes**, with **8,549 model calls** and **6,155,745 measured tokens** in completed trials. The 14-page working paper includes 18 references, raw evidence, 49 passing final apparatus tests and a successful offline analysis replay.
+
+The tested environment contains six synthetic templates and two related Qwen 0.5B checkpoints. No correctness benefit from the structural gate was observed; task shortcuts, overlap and grading limitations are documented. This is a completed first series with planned follow-up work, not a benchmark of the catalogue's 64 families or 384 presets. Independent scientific review remains pending. The catalogue, its cards and the IDE skill are unchanged.
+
 ## Documentation
 
 - [Research and original sources](docs/RESEARCH.md)
