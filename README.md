@@ -80,6 +80,10 @@ An AI-assisted companion study compares structural completion gates and role-sta
 
 The tested environment contains six synthetic templates and two related Qwen 0.5B checkpoints. No correctness benefit from the structural gate was observed; task shortcuts, overlap and grading limitations are documented. This is a completed first series with planned follow-up work, not a benchmark of the catalogue's 64 families or 384 presets. Independent scientific review remains pending. The catalogue, its cards and the IDE skill are unchanged.
 
+## Feedback
+
+[Contact us](https://docs.google.com/forms/d/e/1FAIpQLSdvCPKW7byPQXYSvP1M6BivaTjcsbWdBZGQS19cZvduClpiOA/viewform?hl=en) with a bug report, feature request, blueprint/source correction or general feedback. The Google Form requires no name, email or sign-in. The form has six questions, including three open-ended fields. Only the main feedback message is mandatory; category, experience, useful aspects, improvements and page/preset link are optional. Other responses are not publicly visible. Google hosts and processes submissions; the website does not capture feedback content in analytics.
+
 ## Documentation
 
 - [Research and original sources](docs/RESEARCH.md)
