@@ -33,3 +33,11 @@ The first series accounts for 2,880 assignments: 2,876 completed and four unknow
 The evidence archive and PDF preserve their original SHA-256 values. Research file bytes are exempted from Git line-ending normalization so the CSV and publication hashes survive a Linux Pages checkout. The build injects CSP metadata into the overview and full HTML paper; publication metadata distinguishes HTML source hashes from exact download hashes. CI checks research hashes, CSV counts and costs before deployment.
 
 Local verification passed the 30 existing Agent Deck tests and eight research browser groups, including 1440/768/390/320 px layouts, project-subpath navigation, material responses and an actual canonical ZIP download. No browser errors or external resource requests were observed. The existing catalogue, actor assets and IDE skill ZIP remain byte-identical; their prior performance disclaimers remain in place. Hosted deployment verification is recorded separately after publication.
+
+### Hosted research verification
+
+The research application revision `04ab127d9c102b1688fe451ad76b282805f2c0a5` deployed successfully through [GitHub Actions run 38009607024](https://github.com/Eye172/agent-deck-1/actions/runs/38009607024).
+
+Eight hosted Chromium verification groups passed: the footer link and existing catalogue search; research layouts at 1440, 768, 390 and 320 px; all linked materials and their canonical SHA-256 values; an actual browser evidence ZIP download; and the complete HTML paper with 12 tables. No page errors, page overflow or off-origin resource requests were observed. PDF and evidence ZIP bytes match the sealed original study. Independent HTTPS byte comparisons also confirm that the full catalogue JSON and IDE skill ZIP are unchanged from before the supplement.
+
+[Open Research](https://eye172.github.io/agent-deck-1/research/index.html). Local reports are retained in ignored `output/research-work/`; no machine-specific browser profiles are committed. These publication checks establish delivery and sampled browser behavior, not model performance or independent scientific review. This documentation update does not change the verified application artifact.
